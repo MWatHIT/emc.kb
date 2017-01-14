@@ -18,7 +18,7 @@ from plone.directives import form
 from z3c.form import field, button
 from Products.statusmessages.interfaces import IStatusMessage
 from emc.kb.interfaces import InputError
-from emc.kb.interfaces import IModelLocator,IFashejLocator,IJieshoujLocator,IFashetxLocator,IJieshoutxLocator,IDianxingtxzyzk
+from emc.kb.interfaces import IModelLocator,IFashejLocator,IJieshoujLocator,IFashetxLocator,IJieshoutxLocator,IDianxingtxzyzkLocator
 from emc.kb.mapping_db import IModel,Model
 from emc.kb.mapping_db import Fashej,IFashej
 from emc.kb.mapping_db import Jieshouj,IJieshouj
