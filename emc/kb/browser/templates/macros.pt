@@ -24,7 +24,7 @@
       <ul class="nav navbar-nav">
         <li class="dropdown active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">电磁兼容型号参数库<span class="caret"></span></a>
-          
+
           <ul class="dropdown-menu" role="menu">
             <li>
                  <a tal:attributes="href string:${kb/absolute_url}/@@fashej_listings">
@@ -50,52 +50,52 @@
         </li>
 <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">电磁兼容公用数据库<span class="caret"></span></a>
-          
+
           <ul class="dropdown-menu" role="menu">
 <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@fashej_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@dianxingtxzyzk_listings">
                      典型天线增益子库
                   </a>
                   </li>
                   <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@fashetx_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@tianxianzk_listings">
                      天线子库
                   </a>
                   </li>
                   <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@jieshouj_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@jieshoujzk_listings">
                      接收机子库
                   </a>
                   </li>
                   <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@jieshoutx_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@fashejzk_listings">
                      发射机子库
                   </a>
                   </li>
           </ul>
-        </li>        
-      </ul>      
+        </li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav> 
-</metal:block>          
+</nav>
+</metal:block>
 <metal:block define-macro="navbar2" i18n:domain="emc.kb">
 <div class="row-fluid">
 <div class="navbar col-xs-12"
    tal:define="is_editable context/@@plone_context_state/is_editable;
                kb python:context">
-   <div class="navbar-inner"> 
-      <div class="container"> 
+   <div class="navbar-inner">
+      <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target="#kb-nav">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </a>
-        <a class="brand" 
+        <a class="brand"
             tal:content="kb/title" tal:attributes="href kb/absolute_url">
         </a>
         <div class="nav-collapse" id="kb-nav">
-         <ul class="nav navbar-nav" style="font-size:13px">           
+         <ul class="nav navbar-nav" style="font-size:13px">
             <tal:cond condition="is_editable">
             <li class="divider-vertical"></li>
             <li class="dropdown"><a href="#"
@@ -136,32 +136,32 @@
                </a>
                <ul class="dropdown-menu">
                   <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@fashej_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@dianxingtxzyzk_listings">
                      典型天线增益子库
                   </a>
                   </li>
                   <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@fashetx_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@tianxianzk_listings">
                      天线子库
                   </a>
                   </li>
                   <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@jieshouj_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@jieshoujzk_listings">
                      接收机子库
                   </a>
                   </li>
                   <li>
-                 <a tal:attributes="href string:${kb/absolute_url}/@@jieshoutx_listings">
+                 <a tal:attributes="href string:${kb/absolute_url}/@@fashejzk_listings">
                      发射机子库
                   </a>
                   </li>
                </ul>
-               </li>               
+               </li>
             </tal:cond>
-         </ul>    
+         </ul>
          </div>
-      </div> 
-   </div> 
+      </div>
+   </div>
 </div>
 </div>
 </metal:block>
