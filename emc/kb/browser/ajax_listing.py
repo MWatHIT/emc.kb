@@ -587,7 +587,7 @@ class Dianxingtxzyzkajaxsearch(Fashejajaxsearch):
         contexturl = self.context.absolute_url()
         for i in resultDicLists:
             out = """<tr class="text-left">
-                                <td class="col-md-1 text-left"><a href="%(objurl)s">%(type_antennas)s</a></td>
+                                <td class="col-md-1 text-center">%(type_antennas)s</td>
                                 <td class="col-md-1">%(gain)s</td>
                                 <td class="col-md-1 text-center">
                                 <a href="%(edit_url)s" title="edit">
@@ -601,8 +601,7 @@ class Dianxingtxzyzkajaxsearch(Fashejajaxsearch):
                                   </span>
                                 </a>
                                 </td>
-                                </tr> """% dict(objurl="%s/@@view" % contexturl,
-                                            type_antennas=i[0],
+                                </tr> """% dict(type_antennas=i[0],
                                             gain= i[1],
                                             edit_url="%s/@@update_dianxingtianxianzyzk/%s" % (contexturl,i[0]),
                                             delete_url="%s/@@delete_dianxingtianxianzyzk/%s" % (contexturl,i[0]))
