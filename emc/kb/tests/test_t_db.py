@@ -27,7 +27,7 @@ class TestEmc_test(unittest.TestCase):
         dw.danweidz = u"单位地址1"
         dw.danweilxfs = u"单位电话:85414302"
         dw.users = [T_ry(t_ryname = u"李四"),]
-        Session.add(dw)        
+        Session.add(dw)
         nums = Session.query(func.count(Danwei.danweiId)).scalar()
         ry_nums = Session.query(func.count(T_ry.t_ryId)).scalar()
         self.assertTrue(orig == nums-1)
@@ -83,8 +83,8 @@ class TestEmc_test(unittest.TestCase):
         danweidz = u"单位地址1"
         danweilxfs = u"单位电话:85414302"
 
-        danwei = locator.getByCode(danweimc)
+        danwei = locator.tmp(danweimc)
         import pdb
         pdb.set_trace()
         if danwei == None:
-            locator.add(danweimc)
+            locator.tmp(danweimc)

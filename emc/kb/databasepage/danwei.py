@@ -18,6 +18,9 @@ class DanweiLocator(grok.GlobalUtility):
     """docstring for DanweiLocator."""
     implements(IDanweiLocator)
 
+    def tmp(self,kwargs):
+        pass
+
     def add(self,kwargs):
         recorder = Danwei()
         for kw in kwargs.keys():
